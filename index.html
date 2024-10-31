@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生日快乐！</title>
+    <!-- Swiper CSS (用于照片轮播) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- 添加入场动画容器 -->
+    <div class="cake-entrance" id="cakeEntrance">
+        <div class="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="drip drip1"></div>
+            <div class="drip drip2"></div>
+            <div class="drip drip3"></div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+        <div class="cake-text">生日快乐！</div>
+    </div>
+
+    <!-- 原有的 container div 和其他内容 -->
+    <div class="container" style="display: none;" id="mainContent">
+        <!-- 音乐控制器 -->
+        <div class="music-control">
+            <audio id="bgMusic" loop autoplay>
+                <source src="音乐/2602599529.mp3" type="audio/mpeg">
+            </audio>
+            <button id="musicToggle">
+                <span class="music-note">♪</span>
+            </button>
+            <div class="music-tip">点击开关音乐</div>
+        </div>
+
+        <!-- 在 swiper div 前添加提示文字 -->
+        <div class="image-tip">点击图片可查看完整大图</div>
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <!-- 所有照片 -->
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233211.jpg" alt="照片1"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233223.jpg" alt="照片2"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233221.jpg" alt="照片3"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233429.jpg" alt="照片4"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233209.jpg" alt="照片5"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233215.jpg" alt="照片7"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233207.jpg" alt="照片8"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_202410302331581.jpg" alt="照片9"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233216.jpg" alt="照片10"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233202.jpg" alt="照片11"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241031000240.jpg" alt="照片12"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233203.jpg" alt="照片13"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233205.jpg" alt="照片14"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241031001016.jpg" alt="照片15"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233200.jpg" alt="照片16"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241031000958.jpg" alt="照片17"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241031001006.jpg" alt="照片18"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241031001009.jpg" alt="照片19"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233158.jpg" alt="照片20"></div>
+                <div class="swiper-slide"><img src="照片/微信图片_20241030233157.jpg" alt="照片21"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- 祝福语 -->
+        <div class="wishes">
+            <h1>生日快乐！</h1>
+            <p class="birthday-message">
+                祝小马和旭生日快乐，多的不说上图片！
+            </p>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
